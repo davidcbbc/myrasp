@@ -32,3 +32,5 @@ lcdi2c.lcd_display_string(get_ip_address('wlan0'), 1,3)
 while True:
 #Mostra a data no display
     lcdi2c.lcd_display_string("Data: %s" %time.strftime("%d/%m/%y"), 2,1)
+    time.sleep(10)
+    lcdi2c.lcd_display_string("Teste", 2,1)
